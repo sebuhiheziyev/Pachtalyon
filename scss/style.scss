@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    background: #ffffff;
+}
+
+.mn-5{
+    margin-right: 30px;
+}
+
+#head-deskopt{
+    .container-head{
+        padding: 15px 0px;
+        border-bottom: 1px solid #E5E5E5;
+        .head-arize{
+            height: 33px;
+            .refresh{
+                font-weight: 1000;
+                font-size: 24px;
+                line-height: 31.2px;
+                color:rgba(89, 53, 159, 1)
+            } 
+            .logo{
+                img{
+                    width: 39px;
+                    height: 39px;
+                    border-radius: 4px;
+                    margin-left: calc(350px / 2 - 21.5px);
+                }
+            }
+            .socail-media{
+                ul.socail-logo{
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        a{
+                            margin-right: 15px;
+                            color: #ffffff;
+                            i{
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                text-align: center;
+                                border-radius: 50%;
+                                background: #59359F;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+#navbar-deskopt{
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            border-top: 3px solid transparent;
+            a{
+                font-weight: 500;
+                font-size: 18px;
+                color: #333333;
+                line-height: 23.4px;
+            }
+            a:hover{
+                font-weight: 700;
+            }
+            a.active{
+                color: black;
+                font-weight: 700;
+            }
+        }
+        li.active{
+            border-top: 3px solid #59359F;
+        }
+    }
+}
+
+#last-info{
+    padding-top: 20px;
+    .container{
+        p{
+            display: inline;
+            font-size: 25px;
+            font-weight: 600;
+            color: rgba(51, 51, 51, 1);
+            cursor: pointer;
+        }
+
+       
+    }
+}
+
+#first-info{
+    padding-top: 20px;
+    .container{
+        p{
+            display: inline;
+            font-size: 25px;
+            font-weight: 600;
+            color: rgba(51, 51, 51, 1);
+            cursor: pointer;
+        }
+        .post{
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 10px 40px 0px rgba(142, 142, 142, 0.29);
+            background: #FFFFFF;
+            border-radius: 5px;
+            overflow: hidden;
+            a{
+                .post-img{
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .post-info{
+                    padding: 5px 15px; 
+                    .category{
+                        color: rgba(51, 51, 51, 0.6);
+                        font-size: 15px;
+                        font-weight: 600;
+                        cursor: auto;
+                    }
+                    .post-head{
+                        font-size: 21px;
+                        font-weight: 600;
+                        color: #333333;
+                    }
+                    .post-text{
+                        color: rgba(51, 51, 51, 0.6);
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin: 10px 0px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3; /* number of lines to show */
+                        -webkit-box-orient: vertical;
+                        
+                    }
+                    .post-date-user{
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #333333;
+                        margin: 10px 0px;
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #F1F1F1;
+    padding: 35px 0px;  
+    p.head{
+        color: #333333;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    p.info{
+        color: rgba(51, 51, 51, 0.7);
+        font-size: 13px;
+        padding-bottom: 15px;
+        &:hover {
+            color: #333333;
+        }
+    }
+    .social{
+        ul.socail-logo{
+            display: flex;
+            justify-content: start;
+            li{
+                a{
+                    margin-right: 15px;
+                    color: #ffffff;
+                    i{
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-radius: 50%;
+                        background: rgba(51, 51, 51, 1);
+                        color: #ffffff;
+                    }
+                }
+            }
+           
+        }
+    }
+    ul{
+        li{
+            a{
+                font-size: 15px;
+                font-weight: 400px;
+                color: rgba(51, 51, 51, 0.7);
+                &:hover {
+                    color: #333333;
+                }
+            }
+        }
+    }
+}
