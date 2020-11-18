@@ -103,6 +103,32 @@ body{
             color: rgba(51, 51, 51, 1);
             cursor: pointer;
         }
+        .last-info-area{
+            overflow: hidden;
+            .big-img{
+                width: 100%;
+                height: 422px;
+                border: 1px solid black;
+            }
+            .little-img{
+                width: 100%;
+                height: 201px;
+                border: 1px solid black;
+
+            }
+            .little-img-top{
+                margin-bottom: 20px;
+            }
+            .last-info-area-img{
+                a{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+        }
 
        
     }
@@ -110,6 +136,7 @@ body{
 
 #first-info{
     padding-top: 20px;
+    padding-bottom: 60px;
     .container{
         p{
             display: inline;
@@ -122,16 +149,29 @@ body{
             display: block;
             width: 100%;
             margin-bottom: 30px;
+            height: 382px;
             transition: all 0.3s ease;
             box-shadow: 0px 10px 40px 0px rgba(142, 142, 142, 0.29);
             background: #FFFFFF;
             border-radius: 5px;
             overflow: hidden;
+            &:hover{
+                box-shadow: 0px 10px 40px 0px rgba(122, 122, 122, 0.651);
+                transform: scale(1.02);
+            }
             a{
+                transition: all 0.3s ease;
                 .post-img{
+                    height: 201px;
+                    overflow: hidden;
                     img{
                         max-width: 100%;
+                        min-width: 100%;
                         height: auto;
+                        transition: all 0.3s ease;
+                        &:hover{
+                             transform: scale(1.1);
+                        }
                     }
                 }
                 .post-info{
@@ -146,12 +186,16 @@ body{
                         font-size: 21px;
                         font-weight: 600;
                         color: #333333;
+                        white-space: nowrap;
+                        width: 310px;
+                        overflow: hidden;
                     }
                     .post-text{
                         color: rgba(51, 51, 51, 0.6);
                         font-size: 15px;
                         font-weight: 600;
                         margin: 10px 0px;
+                        height: 66px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         display: -webkit-box;
@@ -169,6 +213,27 @@ body{
                 }
 
             }
+        }
+        .all-post-icon{
+            text-align: right;
+            a{
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0.065em;
+                color: rgba(51, 51, 51, 1);
+                opacity: 0.7;
+                i{
+                    width: 20px;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
+            }
+           
+          
         }
     }
 }

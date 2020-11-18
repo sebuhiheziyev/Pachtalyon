@@ -114,8 +114,34 @@ body {
   cursor: pointer;
 }
 
+#last-info .container .last-info-area {
+  overflow: hidden;
+}
+
+#last-info .container .last-info-area .big-img {
+  width: 100%;
+  height: 422px;
+  border: 1px solid black;
+}
+
+#last-info .container .last-info-area .little-img {
+  width: 100%;
+  height: 201px;
+  border: 1px solid black;
+}
+
+#last-info .container .last-info-area .little-img-top {
+  margin-bottom: 20px;
+}
+
+#last-info .container .last-info-area .last-info-area-img a img {
+  width: 100%;
+  height: 100%;
+}
+
 #first-info {
   padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 #first-info .container p {
@@ -130,6 +156,7 @@ body {
   display: block;
   width: 100%;
   margin-bottom: 30px;
+  height: 382px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-box-shadow: 0px 10px 40px 0px rgba(142, 142, 142, 0.29);
@@ -139,9 +166,34 @@ body {
   overflow: hidden;
 }
 
+#first-info .container .post:hover {
+  -webkit-box-shadow: 0px 10px 40px 0px rgba(122, 122, 122, 0.651);
+          box-shadow: 0px 10px 40px 0px rgba(122, 122, 122, 0.651);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#first-info .container .post a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#first-info .container .post a .post-img {
+  height: 201px;
+  overflow: hidden;
+}
+
 #first-info .container .post a .post-img img {
   max-width: 100%;
+  min-width: 100%;
   height: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#first-info .container .post a .post-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #first-info .container .post a .post-info {
@@ -159,6 +211,9 @@ body {
   font-size: 21px;
   font-weight: 600;
   color: #333333;
+  white-space: nowrap;
+  width: 310px;
+  overflow: hidden;
 }
 
 #first-info .container .post a .post-info .post-text {
@@ -166,6 +221,7 @@ body {
   font-size: 15px;
   font-weight: 600;
   margin: 10px 0px;
+  height: 66px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -179,6 +235,30 @@ body {
   font-weight: 600;
   color: #333333;
   margin: 10px 0px;
+}
+
+#first-info .container .all-post-icon {
+  text-align: right;
+}
+
+#first-info .container .all-post-icon a {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.065em;
+  color: #333333;
+  opacity: 0.7;
+}
+
+#first-info .container .all-post-icon a i {
+  width: 20px;
+}
+
+#first-info .container .all-post-icon a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1;
 }
 
 footer {
