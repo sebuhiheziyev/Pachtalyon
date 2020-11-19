@@ -103,7 +103,7 @@ body {
 }
 
 #last-info {
-  padding-top: 20px;
+  padding: 22px 0px 35px 0px;
 }
 
 #last-info .container p {
@@ -121,22 +121,117 @@ body {
 #last-info .container .last-info-area .big-img {
   width: 100%;
   height: 422px;
-  border: 1px solid black;
 }
 
 #last-info .container .last-info-area .little-img {
   width: 100%;
   height: 201px;
-  border: 1px solid black;
+  position: relative;
+}
+
+#last-info .container .last-info-area .little-img .last-info-little-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#last-info .container .last-info-area .little-img .last-info-little-text .head-text {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  width: 290px;
+  word-wrap: break-word;
+  margin-bottom: 8px;
+}
+
+#last-info .container .last-info-area .little-img .last-info-little-text .head-text a {
+  color: #FFFFFF;
+}
+
+#last-info .container .last-info-area .little-img .last-info-little-text .write-info {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#last-info .container .last-info-area .little-img .last-info-little-text .write-info:hover {
+  color: #ffffff;
+}
+
+#last-info .container .last-info-area .little-img .last-info-little-text .write-info span {
+  font-size: 18px;
 }
 
 #last-info .container .last-info-area .little-img-top {
   margin-bottom: 20px;
 }
 
+#last-info .container .last-info-area .last-info-area-img {
+  overflow: hidden;
+}
+
+#last-info .container .last-info-area .last-info-area-img a {
+  position: relative;
+}
+
 #last-info .container .last-info-area .last-info-area-img a img {
   width: 100%;
   height: 100%;
+}
+
+#last-info .container .last-info-area .last-info-area-img .last-info-text {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  color: #FFFFFF;
+}
+
+#last-info .container .last-info-area .last-info-area-img .last-info-text .head-text {
+  width: 425px;
+  word-wrap: break-word;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#last-info .container .last-info-area .last-info-area-img .last-info-text .head-text a {
+  color: #FFFFFF;
+}
+
+#last-info .container .last-info-area .last-info-area-img .last-info-text .write-info {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+#last-info .container .last-info-area .last-info-area-img .last-info-text .write-info span {
+  font-size: 20px;
+}
+
+#last-info .container .last-info-area .last-info-area-img .last-info-text .write-info:hover {
+  color: #FFFFFF;
+}
+
+#last-info .container .last-info-area .last-info-area-img img {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#last-info .container .last-info-area .last-info-area-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #first-info {
@@ -162,7 +257,8 @@ body {
   -webkit-box-shadow: 0px 10px 40px 0px rgba(142, 142, 142, 0.29);
           box-shadow: 0px 10px 40px 0px rgba(142, 142, 142, 0.29);
   background: #FFFFFF;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   overflow: hidden;
 }
 
