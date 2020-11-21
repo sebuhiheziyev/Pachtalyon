@@ -112,6 +112,7 @@ body {
 
 #navbar-deskopt .menu-bars {
   text-align: right;
+  padding: 10px 0px;
 }
 
 #navbar-deskopt .menu-bars i {
@@ -164,12 +165,12 @@ body {
 
 #last-info .container .last-info-area .big-img {
   width: 100%;
-  height: 422px;
+  height: auto;
 }
 
 #last-info .container .last-info-area .little-img {
   width: 100%;
-  height: 201px;
+  height: auto;
   position: relative;
 }
 
@@ -212,7 +213,7 @@ body {
 }
 
 #last-info .container .last-info-area .little-img-top {
-  margin-bottom: 20px;
+  margin-bottom: 25.4px;
 }
 
 #last-info .container .last-info-area .last-info-area-img {
@@ -481,5 +482,77 @@ footer ul li a:hover {
 .pereloder-delet {
   opacity: 0 !important;
   visibility: hidden !important;
+}
+
+#about {
+  padding: 50px 0px 150px 0px;
+}
+
+#about .head {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: left;
+}
+
+#about .about-img {
+  position: relative;
+}
+
+#about .about-img img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: -23px;
+  left: -124px;
+}
+
+@media only screen and (max-width: 768px) {
+  #last-info .container .last-info-area .big-img .last-info-text {
+    bottom: 15px;
+  }
+  #last-info .container .last-info-area .big-img .last-info-text .head-text {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 5px;
+  }
+  #last-info .container .last-info-area .big-img .last-info-text .write-info {
+    font-size: 12px;
+  }
+  #last-info .container .last-info-area .big-img .last-info-text .write-info span {
+    font-size: 15px;
+  }
+  #last-info .container .last-info-area .little-img .last-info-little-text .head-text {
+    font-size: 12px;
+    line-height: 15px;
+    width: 170px;
+    margin-bottom: 6px;
+  }
+  #last-info .container .last-info-area .little-img .last-info-little-text .write-info {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  #last-info .container .last-info-area .little-img .last-info-little-text .write-info span {
+    font-size: 12px;
+  }
+  #last-info .container .last-info-area .little-img-top {
+    margin-bottom: 22.6px;
+  }
+  #first-info .container .post a .post-info .post-head {
+    width: 265px;
+  }
+  #about .about-img img {
+    top: -8px;
+    left: -78px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .row {
+    margin: 0px !important;
+  }
+  #about .about-img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

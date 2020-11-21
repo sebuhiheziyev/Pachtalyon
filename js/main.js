@@ -21,7 +21,7 @@ $(window).on('load', function () {
         
         //navbar responsive
         $(".menu-bars").removeClass("d-none");
-        $(".menu").addClass("responsive-nav d-none");
+        $(".menu").addClass("responsive-nav");
     }
     else{
         //first section responsive

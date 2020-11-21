@@ -99,6 +99,7 @@ body{
     }
     .menu-bars{
         text-align: right;
+        padding: 10px 0px;
         i{
             font-size:25px;
             margin-right: 20px;
@@ -142,11 +143,11 @@ body{
             overflow: hidden;
             .big-img{
                 width: 100%;
-                height: 422px;
+                height: auto;
             }
             .little-img{
                 width: 100%;
-                height: 201px;
+                height: auto;
                 position: relative;
                 .last-info-little-text{
                     position: absolute;
@@ -183,7 +184,7 @@ body{
 
             }
             .little-img-top{
-                margin-bottom: 20px;
+                margin-bottom: 25.4px;
             }
             .last-info-area-img{
                 overflow: hidden;
@@ -408,4 +409,100 @@ footer{
 .pereloder-delet{
     opacity: 0 !important;
     visibility: hidden !important;
+}
+
+#about{
+    padding: 50px 0px 150px 0px;
+    .head{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 33px;
+        text-align: left;
+    }
+    .about-img{
+        position: relative;
+        img{
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            top: -23px;
+            left: -124px;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #last-info{
+        .container{
+            .last-info-area{
+                .big-img{
+                    .last-info-text{
+                        bottom: 15px;
+                        .head-text{
+                            font-size: 21px;
+                            line-height: 25px;
+                            margin-bottom: 5px;
+                        }
+                        .write-info{
+                            font-size: 12px;
+                            span{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                   
+                }
+                .little-img{
+                    .last-info-little-text{
+                        .head-text{
+                            font-size: 12px;
+                            line-height: 15px;
+                            width: 170px;
+                            margin-bottom: 6px;
+                        }
+                        .write-info{
+                            font-size: 10px;
+                            line-height: 10px;
+                            span{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                } 
+                .little-img-top {
+                    margin-bottom: 22.6px;
+                }
+            }
+        }
+       
+    }
+
+    #first-info .container .post a .post-info .post-head {
+        width: 265px;
+    }
+
+    #about{
+        .about-img{
+           img{
+                top: -8px;
+                left: -78px;
+           }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+   .row{
+       margin: 0px !important;
+   } 
+ 
+   #about{
+       .about-img{
+           display: none;
+       }
+   }
 }
