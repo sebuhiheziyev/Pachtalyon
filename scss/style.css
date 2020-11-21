@@ -69,6 +69,14 @@ body {
   color: #ffffff;
 }
 
+#navbar-deskopt {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 99;
+  background: white;
+  top: 0;
+}
+
 #navbar-deskopt ul {
   display: -webkit-box;
   display: -ms-flexbox;
