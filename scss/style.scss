@@ -21,6 +21,8 @@ body{
     margin-right: 30px;
 }
 
+
+
 #head-deskopt{
     .container-head{
         padding: 15px 0px;
@@ -89,6 +91,35 @@ body{
         }
         li.active{
             border-top: 3px solid #59359F;
+        }
+    }
+    .menu-bars{
+        text-align: right;
+        i{
+            font-size:25px;
+            margin-right: 20px;
+            color: #482f86;
+        }
+    }
+    .responsive-nav{
+        display: block;
+        margin-left: 10px;
+        .mn-5{
+            margin-right:20px; 
+        }
+        li{
+            border-radius: 2px;
+            a{
+                margin-left: 5px;
+                
+            }
+            &:hover{
+                background-color:  #482f86;
+                a{
+                    color: #FFFFFF;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
@@ -354,4 +385,23 @@ footer{
             }
         }
     }
+}
+
+#pereloder{
+    background-color: #f0f0fc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    transition: all 0.5s linear;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+}
+.pereloder-delet{
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
