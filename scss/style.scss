@@ -107,7 +107,7 @@ body{
         }
     }
     .responsive-nav{
-        display: block;
+        display: none;
         margin-left: 10px;
         .mn-5{
             margin-right:20px; 
@@ -244,12 +244,26 @@ body{
     padding-top: 20px;
     padding-bottom: 60px;
     .container{
-        p{
-            display: inline;
-            font-size: 25px;
-            font-weight: 600;
-            color: rgba(51, 51, 51, 1);
-            cursor: pointer;
+
+        .section-head{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: 25px;
+                font-weight: 600;
+                color: rgba(51, 51, 51, 1);
+                cursor: pointer;
+            }
+            .post-type{
+                font-size: 17px;
+                font-weight: 600;
+                line-height: 50px;
+                text-align: right;
+                color: #333333;
+                position: relative;
+                cursor: pointer;
+                
+            }
         }
         .post{
             display: block;
@@ -431,7 +445,70 @@ footer{
     }
 }
 
+#author{
+    padding: 50px 0px;
+    .section-head{
+        p{
+            font-size: 25px;
+            font-weight: 600;
+            color: #333333;
+            cursor: pointer;
+        }
+    }
+    .author-form{
+        display: flex;
+        form{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 50%;
+            position: relative;
+            input{
+                width: 224px;
+                height: 45px;
+                padding-left: 8px;
+                border: 1px solid rgba(51, 51, 51, 1);
+                border-radius: 5px;
+                outline: none;
+                margin-bottom: 15px;
+            }
+            textarea{
+                width: 100%;
+                padding: 8px 0px 0px 8px;
+                border: 1px solid rgba(51, 51, 51, 1);
+                border-radius: 5px;
+                outline: none;
+                resize: none;
+            }
+            .button{
+                position: absolute;
+                bottom: 10px;
+                right: -207px;
+                button{
+                    border: 1px solid rgba(89, 53, 159, 1);
+                    color:rgba(89, 53, 159, 1);
+                    font-size: 15px;
+                    text-align: center;
+                    font-weight: 600;
+                    height: 40px;
+                    width: 164px;
+                     outline: none;
+                    border-radius: 49px;
+                    background-color: #FFFFFF;
+                    &:hover{
+                        background-color: rgba(89, 53, 159, 1);
+                        color: #FFFFFF;
+                    }
 
+                }
+            }
+        }
+        .form-info{
+            width: 50%;
+            padding: 0px 45px;
+        }
+    }
+}
 
 
 @media only screen and (max-width: 768px) {

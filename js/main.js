@@ -22,6 +22,7 @@ $(window).on('load', function () {
         //navbar responsive
         $(".menu-bars").removeClass("d-none");
         $(".menu").addClass("responsive-nav");
+        
     }
     else{
         //first section responsive
@@ -31,8 +32,10 @@ $(window).on('load', function () {
 
 
     $( ".menu-bars" ).click(function() {
-        $(".menu").toggleClass("d-none");
+        $(".menu").toggleClass("d-block");
     });
+
+
 });
 
 

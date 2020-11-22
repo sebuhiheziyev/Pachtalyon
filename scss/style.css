@@ -122,7 +122,7 @@ body {
 }
 
 #navbar-deskopt .responsive-nav {
-  display: block;
+  display: none;
   margin-left: 10px;
 }
 
@@ -284,11 +284,29 @@ body {
   padding-bottom: 60px;
 }
 
-#first-info .container p {
-  display: inline;
+#first-info .container .section-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#first-info .container .section-head p {
   font-size: 25px;
   font-weight: 600;
   color: #333333;
+  cursor: pointer;
+}
+
+#first-info .container .section-head .post-type {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: right;
+  color: #333333;
+  position: relative;
   cursor: pointer;
 }
 
@@ -505,6 +523,84 @@ footer ul li a:hover {
   position: absolute;
   top: -23px;
   left: -124px;
+}
+
+#author {
+  padding: 50px 0px;
+}
+
+#author .section-head p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+}
+
+#author .author-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#author .author-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  position: relative;
+}
+
+#author .author-form form input {
+  width: 224px;
+  height: 45px;
+  padding-left: 8px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+#author .author-form form textarea {
+  width: 100%;
+  padding: 8px 0px 0px 8px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+#author .author-form form .button {
+  position: absolute;
+  bottom: 10px;
+  right: -207px;
+}
+
+#author .author-form form .button button {
+  border: 1px solid #59359f;
+  color: #59359f;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  height: 40px;
+  width: 164px;
+  outline: none;
+  border-radius: 49px;
+  background-color: #FFFFFF;
+}
+
+#author .author-form form .button button:hover {
+  background-color: #59359f;
+  color: #FFFFFF;
+}
+
+#author .author-form .form-info {
+  width: 50%;
+  padding: 0px 45px;
 }
 
 @media only screen and (max-width: 768px) {
