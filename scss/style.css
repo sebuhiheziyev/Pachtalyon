@@ -603,6 +603,79 @@ footer ul li a:hover {
   padding: 0px 45px;
 }
 
+#authors {
+  padding: 50px 0px;
+}
+
+#authors .authors-sc-name p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+}
+
+#authors .authors-body .authors-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#authors .authors-body .authors-table .authors-img {
+  width: 75px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#authors .authors-body .authors-table .authors-img img {
+  max-width: 75px;
+  border-radius: 50%;
+}
+
+#authors .authors-body .authors-table .authors-info {
+  padding: 5px 10px;
+}
+
+#authors .authors-body .authors-table .authors-info .authors-name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  color: #333333;
+}
+
+#authors .authors-body .authors-table .authors-info .authors-post-count {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+#authors .authors-body .m-btn {
+  text-align: center;
+}
+
+#authors .authors-body .m-btn button {
+  border: 1px solid #59359f;
+  color: #59359f;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  height: 40px;
+  width: 164px;
+  outline: none;
+  border-radius: 49px;
+  background-color: #FFFFFF;
+}
+
+#authors .authors-body .m-btn button:hover {
+  background-color: #59359f;
+  color: #FFFFFF;
+}
+
 @media only screen and (max-width: 768px) {
   #last-info .container .last-info-area .big-img .last-info-text {
     bottom: 15px;
@@ -641,6 +714,14 @@ footer ul li a:hover {
     top: -8px;
     left: -78px;
   }
+  #author .author-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #author .author-form form input {
+    width: 345px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -649,6 +730,23 @@ footer ul li a:hover {
   }
   #about .about-img {
     display: none;
+  }
+  #author .author-form {
+    display: block;
+  }
+  #author .author-form form input {
+    width: 315px;
+  }
+  #author .author-form form .button {
+    bottom: -248px;
+    right: -4px;
+  }
+  #author .author-form form textarea {
+    width: 315px;
+  }
+  #author .author-form .form-info {
+    width: 100%;
+    padding: 10px 2px;
   }
 }
 /*# sourceMappingURL=style.css.map */

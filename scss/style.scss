@@ -510,6 +510,73 @@ footer{
     }
 }
 
+#authors{
+    padding: 50px 0px;
+    .authors-sc-name{
+        p{
+            font-size: 25px;
+            font-weight: 600;
+            color: #333333;
+            cursor: pointer;
+        }
+    }
+    .authors-body{
+        .authors-table{
+            display: flex;
+            margin-bottom: 30px;
+            .authors-img{
+                width: 75px;
+                border-radius: 50px;
+                overflow: hidden;
+                img{
+                    max-width: 75px;
+                    border-radius: 50%;
+                }
+            }
+            .authors-info{
+                padding: 5px 10px;
+                .authors-name{
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 23px;
+                    letter-spacing: 0.04em;
+                    color: rgba(51, 51, 51, 1);
+
+                }
+                .authors-post-count{
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.04em;
+                    color: rgba(51, 51, 51, 0.7);
+
+                }
+            }
+        }
+        .m-btn{
+            text-align: center;
+            button{
+                border: 1px solid #59359f;
+                color: #59359f;
+                font-size: 15px;
+                text-align: center;
+                font-weight: 600;
+                height: 40px;
+                width: 164px;
+                outline: none;
+                border-radius: 49px;
+                background-color: #FFFFFF;
+                &:hover{
+                    background-color: rgba(89, 53, 159, 1);
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     #last-info{
@@ -569,6 +636,18 @@ footer{
            }
         }
     }
+
+    #author {
+        .author-form{
+            display: flex;
+            form{
+                input{
+                    width: 345px;
+                }
+             
+            }
+        }
+    }
     
 }
 
@@ -582,4 +661,27 @@ footer{
            display: none;
        }
    }
+
+   #author {
+        .author-form{
+             display: block;
+            form{
+                input{
+                    width: 315px;
+                }
+                .button{
+                    bottom: -248px;
+                    right: -4px;
+                }
+                textarea{
+                    width: 315px;
+                }
+            }
+            .form-info{
+                width: 100%;
+                padding: 10px 2px;
+            }
+        }
+    }
+
 }
