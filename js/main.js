@@ -13,7 +13,7 @@ $(window).on('load', function () {
     if($size  < 768){
         //first section responsive
         $(".big-img").addClass("d-none");
-        $(".little-img").first().removeClass("d-none");
+        $(".little-img-for-js").first().removeClass("d-none");
 
         //header-responsive
         $("#head-deskopt .socail-media").addClass("d-none");
@@ -27,7 +27,7 @@ $(window).on('load', function () {
     else{
         //first section responsive
         $(".big-img").removeClass("d-none");
-        $(".little-img").first().addClass("d-none");
+        $(".little-img-for-js").first().addClass("d-none");
     }
 
 
