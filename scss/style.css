@@ -475,6 +475,87 @@ footer ul li a:hover {
   color: #333333;
 }
 
+#post {
+  padding: 100px 0px 200px 0px;
+}
+
+#post .post-info {
+  text-align: center;
+}
+
+#post .post-info .post-time {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#post .post-info .post-time .post-day {
+  background-color: #59359F;
+  padding: 15px 0px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#post .post-info .post-time .post-clock {
+  background-color: #334564;
+  color: #fff;
+  padding: 8px 0px;
+}
+
+#post .post-info .post-time .post-view-count {
+  background-color: #f2f2f2;
+  color: #757575;
+  border: 1px solid #dddddd;
+  padding: 8px 0px;
+}
+
+#post .post-info .post-time .post-view-count i {
+  margin-right: 5px;
+}
+
+#post .post-info .post-writer {
+  background-color: #f2f2f2;
+  color: #757575;
+  border: 1px solid #dddddd;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#post .post-info .post-writer .author {
+  padding: 8px 0px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#post .post-info .post-writer .author-name {
+  padding: 8px 0px;
+}
+
+#post .post-info .post-writer .author-name a {
+  color: black;
+}
+
+#post .post-info .post-writer .author-name a:hover {
+  color: red;
+}
+
+#post .post-info .post-category {
+  background-color: #f2f2f2;
+  color: #757575;
+  border: 1px solid #dddddd;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+#post .post-info .post-category .category {
+  padding: 8px 0px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#post .post-info .post-category .category-name {
+  padding: 8px 0px;
+}
+
 #pereloder {
   background-color: #f0f0fc;
   position: fixed;
