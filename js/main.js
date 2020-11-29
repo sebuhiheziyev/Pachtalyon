@@ -30,9 +30,34 @@ $(window).on('load', function () {
         $(".little-img-for-js").first().addClass("d-none");
     }
 
-
+    //Responsive menu show
     $( ".menu-bars" ).click(function() {
         $(".menu").toggleClass("d-block");
+    });
+
+
+    var num = 15;
+    $( ".post-pilus-zoom" ).click(function() {
+        if(num < 45){
+            num = num+3;
+            $(".post-minus-zoom").removeClass("passive-zoom");
+            console.log(num);
+        }
+        else{
+            $(this).addClass("passive-zoom");
+        }
+    });
+
+    $( ".post-minus-zoom" ).click(function() {
+        if(num > 15){
+            num = num-3;
+            $(".post-pilus-zoom").removeClass("passive-zoom");
+            console.log(num);
+        }
+        else{
+            $(this).addClass("passive-zoom");
+        }
+        
     });
 
 
